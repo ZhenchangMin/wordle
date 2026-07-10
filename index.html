@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#121213" />
+  <title>WORDLE · 自选难度猜词</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <button id="help" class="icon" aria-label="游戏说明">?</button>
+    <h1>WORDLE</h1>
+    <button id="stats" class="icon" aria-label="统计信息">▥</button>
+  </header>
+  <main>
+    <section id="setup" aria-label="游戏设置">
+      <label>字母数<select id="wordLength"><option>4</option><option selected>5</option><option>6</option><option>7</option><option>8</option></select></label>
+      <label>难度<select id="difficulty"><option value="easy">简单</option><option value="normal" selected>普通</option><option value="hard">困难</option></select></label>
+      <button id="newGame" class="new-game">新游戏</button>
+    </section>
+    <p id="subtitle"></p>
+    <section id="board" aria-label="猜词棋盘"></section>
+    <div id="message" role="status" aria-live="polite"></div>
+    <section id="keyboard" aria-label="屏幕键盘"></section>
+  </main>
+  <dialog id="modal">
+    <button id="close" class="close" aria-label="关闭">×</button>
+    <div id="modalContent"></div>
+  </dialog>
+  <script src="game.js"></script>
+</body>
+</html>

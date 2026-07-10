@@ -1,2 +1,3 @@
-# wordle
-A simple wordle game
+# Wordle
+
+双击 `index.html` 即可开始游戏。支持实体键盘、屏幕键盘、4–8 字母选择、三档难度、重复字母判定和本机统计。
